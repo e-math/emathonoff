@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OnOff widget</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.emathonoff.js"></script>
+        <script type="text/javascript">
+            jQuery(function(){
+                jQuery('.onoff1').emathonoff();
+                jQuery('.onoff2').emathonoff({texts:['Päällä','Pois'], coloron:'green', coloroff:'red'});
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="head-content">
+                <img id="logo" src="images/emath-logo.png" alt="E-Math" />
+                <h1>EmathEquationarray</h1>
+                <h2>Create equationarrays in web</h2>
+            </div>
+        </header>
+        <a href="https://github.com/e-math/emathonoff"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+        <article class="content">
+            <h2>Default values</h2>
+            <p>Here are couple of examples, how to use <code>jquery.emathonoff.js</code>.</p>
+<div class="codeexample">
+&lt;input type="checkbox" class="onoff1" /&gt;
+&lt;script type="text/javascript"&gt;
+    jQuery('.onoff1').emathonoff();
+&lt;/script&gt;
+</div>
+            <div><input class="onoff1" type="checkbox" />Is it on or off?</div>
+            <h2>Custom texts and colors</h2>
+<div class="codeexample">
+&lt;input type="checkbox" class="onoff2" /&gt;
+&lt;script type="text/javascript"&gt;
+    jQuery('.onoff2').emathonoff({
+        texts:['Päällä','Pois'],
+        coloron:'green',
+        coloroff:'red'
+    });
+&lt;/script&gt;
+</div>
+            <div><input class="onoff2" type="checkbox" />Is it on or off?</div>
+        </article>
+        <footer>
+            <div id="disclaimerbox">
+                <div id="leftlogo">
+                    <img src="images/CB_logo-200.png" alt="" />
+                </div>
+                <div id="rightlogo">
+                    <img src="images/EU_with_references-300.png" alt="" />
+                </div>
+                <div id="disclaimer">
+                    The contents of the website reflect the authors' views. The Managing Authority of the Central Baltic INTERREG IVA Programme cannot be held liable for the information published by the project partners. 
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
